@@ -1,0 +1,83 @@
+.singup {
+  height: 100vh;
+  background: #476dc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    background: white;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    .left {
+      flex: 1;
+      background: linear-gradient(#120233c0, #120233c0),
+        url("../../assets/social-media.jpg") center;
+      min-height: 600px;
+      color: white;
+      background-size: cover;
+      object-fit: cover;
+      align-items: center;
+      display: flex;
+      .content {
+        padding: 50px 30px;
+        h1 {
+          font-size: 70px;
+          line-height: 80px;
+          margin-bottom: 10px;
+        }
+        p {
+          display: block;
+        }
+        span {
+          display: block;
+          line-height: 50px;
+        }
+        button {
+          width: 100%;
+          padding: 15px 0;
+          cursor: pointer;
+          border: 0;
+          font-weight: bold;
+          color: #5f27cd;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 30px;
+        h2 {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 10px;
+          margin-bottom: 20px;
+          outline: none;
+          font-size: 18px;
+        }
+        button {
+          width: 100%;
+          padding: 15px 0;
+          cursor: pointer;
+          margin-top: 10px;
+          border: 0;
+          background: #5f27cd;
+          font-weight: bold;
+          color: white;
+        }
+      }
+    }
+  }
+}

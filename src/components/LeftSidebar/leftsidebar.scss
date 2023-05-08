@@ -1,0 +1,63 @@
+@import "../../app.scss";
+.left-sidebar{
+     @include themify($themes){
+
+    
+     flex: 2;
+     background: themed("bg");
+     color: themed("textColor");
+     height: 100vh;
+     position: sticky;
+     top: 50px;
+     overflow: auto;
+     &::-webkit-scrollbar{
+          display: none;
+     }
+     .container{
+          padding: 20px;
+          .user{
+               display: flex;
+               align-items: center;
+               padding: 5px; 
+               gap: 10px;
+               background: themed("bg");
+               border-radius: 10px;
+               cursor: pointer;
+               img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+               }
+          }
+          hr{
+               border: none;
+               height: 1px;
+               background: themed("border");
+               margin: 5px 0;
+          }
+          span{
+               padding: 10px 5px;
+          }
+          .navItem{
+               display: flex;
+               align-items: center;
+               gap: 10px;
+               padding: 10px 5px;
+               cursor: pointer;
+               border-radius: 10px;
+               transition: all ease .5s;
+               &:hover{
+                    background: themed("bgSoft");
+               }
+
+               img{
+                    max-width: 30px;
+               }
+               li{
+                    font-weight: bold;
+               }
+          }
+     }
+}
+}
