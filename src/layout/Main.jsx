@@ -1,7 +1,5 @@
 import React from 'react';
-
 import { Outlet } from 'react-router-dom';
-
 import "./main.scss"
 import LeftSidebar from '../components/LeftSidebar/LeftSidebar';
 import RightSidebar from '../components/RightSidebar/RightSidebar';

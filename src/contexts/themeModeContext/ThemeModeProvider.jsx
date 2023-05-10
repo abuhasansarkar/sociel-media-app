@@ -10,7 +10,7 @@ const ThemeModeProvider = ({children}) => {
           setDarkModeTheme(!darkModeTheme)
      }
      useEffect(() => {
-          localStorage.setItem("darkModeTheme", darkModeTheme)
+          localStorage.setItem("darkModeTheme", darkModeTheme);
      }, [darkModeTheme]);
 
      const value = {

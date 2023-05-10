@@ -12,9 +12,13 @@ import { Link } from "react-router-dom";
 
 import userImg from "../../assets/social-media.jpg";
 import { ThemeModeContext } from "../../contexts/themeModeContext/ThemeModeProvider";
+import { AuthContext } from "../../contexts/authContext/AuthContextProvider";
 
 const Navbar = () => {
   const {themeModeToggle, darkModeTheme} = useContext(ThemeModeContext);
+  const { currentUser} = useContext(AuthContext);
+  // console.log(currentUser);
+
   return (
     <div className="navbar">
       <div className="left-side">
@@ -38,7 +42,7 @@ const Navbar = () => {
         <NotificationsActiveIcon className="icon"/>
         <div className="user">
           <img src={userImg} alt="user" />
-          <strong>UserName</strong>
+          <strong>{currentUser.username}</strong>
         </div>
       </div>
     </div>
